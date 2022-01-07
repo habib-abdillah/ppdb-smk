@@ -1,0 +1,32 @@
+$white:#fff;
+$black:#2d2d2d;
+$primary-blue:#0e86d2;
+$primary-blue-dark:#0B6AA5;
+$secondary-blue:#bdddf2;
+$primary-red:#9b1013;
+$primary-red-dark:#700c0e;
+
+$custom-theme : (
+    "primary-blue":$primary-blue,
+    "primary-blue-dark":$primary-blue-dark,
+    "secondary-blue":$secondary-blue,
+    "primary-red":$primary-red,
+    "primary-red-dark":$primary-red-dark
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$theme-colors:map-merge($theme-colors, $custom-theme);
